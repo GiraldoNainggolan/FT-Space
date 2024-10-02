@@ -6,10 +6,6 @@ use Illuminate\Support\Facades\Route;
 //     return view('welcome');
 // });
 
-Route::get('/', function () {
-    return view('home');
-});
-
 Route::middleware([
     'auth:sanctum',
     config('jetstream.auth_session'),
